@@ -1,3 +1,24 @@
+/* const SamlStrategy = require('passport-saml').Strategy;
+
+
+const samlConfig = {
+  {
+    path: 'http://localhost:8080/login',
+    entryPoint: 'https://ti-intrasso.st.com:9031/idp/SSO.saml2',
+    issuer: 'passport-saml',
+    cert: fs.readFileSync('C:/cert/187C697A9BB.crt', 'utf-8') ,
+    signatureAlgorithm: 'sha256'
+  },
+  function ini(profile, done) {
+    findByEmail(profile.email, profile.ID, function(err, user) {
+      if (err) {
+        return done(err);
+      }
+      return done(null, user);
+    });
+  })
+);
+*/
 const LocalStrategy = require('passport-local').Strategy
 const bcrypt = require('bcrypt')
 
